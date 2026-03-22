@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinații | Brosoveanu Turism</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Grid pentru imagini */
+        .destinations-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .destination-card {
+            flex: 1 1 calc(25% - 20px); /* 4 pe rând, spațiu între ele */
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 250px;
+            text-align: center;
+        }
+        .destination-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .destination-card h3 {
+            margin: 12px 0 8px;
+            color: #2e86de;
+            font-size: 1.1rem;
+        }
+        .destination-card p {
+            font-size: 0.95rem;
+            padding: 0 8px 12px;
+            color: #555;
+        }
+        .destination-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 1024px) {
+            .destination-card {
+                flex: 1 1 calc(33% - 20px); /* 3 pe rând */
+            }
+        }
+        @media (max-width: 768px) {
+            .destination-card {
+                flex: 1 1 calc(50% - 20px); /* 2 pe rând */
+            }
+        }
+        @media (max-width: 480px) {
+            .destination-card {
+                flex: 1 1 100%; /* 1 pe rând */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html"><h1>BROSOVEANU TURISM</h1></a>
+    <p>Vacanțe frumoase la prețuri corecte!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="destinatii.html">Destinații</a></li>
+        <li><a href="oferte.html">Oferte speciale</a></li>
+        <li><a href="rezervari.html">Rezervări</a></li>
+        <li><a href="blog.html">Blog turistic</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Destinațiile noastre preferate</h2>
+
+        <div class="destinations-grid">
+            <!-- Destinație 1 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg" alt="Paris, Franța">
+                <h3>Paris, Franța</h3>
+                <p>Romantism, artă și gastronomie de top.</p>
+            </div>
+
+            <!-- Destinație 2 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Roma, Italia">
+                <h3>Roma, Italia</h3>
+                <p>Istorie antică și monumente celebre.</p>
+            </div>
+
+            <!-- Destinație 3 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg" alt="Barcelona, Spania">
+                <h3>Barcelona, Spania</h3>
+                <p>Gaudi, plaje și viață vibrantă.</p>
+            </div>
+
+            <!-- Destinație 4 -->
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSci7JfC1bgDs5YJNkY32mAFJU-Ilug-S8dmj8K4tFw&s">
+                <h3>Londra, UK</h3>
+                <p>Big Ben, muzee și teatre faimoase.</p>
+            </div>
+
+            <!-- Destinație 5 -->
+            <div class="destination-card">
+                <img src="https://cdn-prod.travelfuse.ro/images/_top_27c0705206dc3e48d126217673f36541.jpg">
+                <h3>Amsterdam, Olanda</h3>
+                <p>Canale romantice și cultură olandeză.</p>
+            </div>
+
+            <!-- Destinație 6 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Creta, Grecia">
+                <h3>Creta, Grecia</h3>
+                <p>Plaje superbe și peisaje mediteraneene.</p>
+            </div>
+
+            <!-- Destinație 7 -->
+            <div class="destination-card">
+                <img src="https://img.directbooking.ro/getimage.ashx?w=600&h=450&&file=cc16786f-827a-4405-acd1-0a13fd21f196.jpg">
+                <h3>Hurghada, Egipt</h3>
+                <p>Mare caldă, snorkeling și relaxare totală.</p>
+            </div>
+
+            <!-- Destinație 8 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/260830/pexels-photo-260830.jpeg" alt="Zakynthos, Grecia">
+                <h3>Zakynthos, Grecia</h3>
+                <p>Navagio Beach și insule de vis.</p>
+            </div>
+
+            <!-- Destinație 9 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg" alt="Rhodos, Grecia">
+                <h3>Rhodos, Grecia</h3>
+                <p>Oraș medieval și plaje spectaculoase.</p>
+            </div>
+
+            <!-- Destinație 10 -->
+            <div class="destination-card">
+                <img src="https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg" alt="Sunny Beach, Bulgaria">
+                <h3>Sunny Beach, Bulgaria</h3>
+                <p>Plaje largi și distracție la Marea Neagră.</p>
+            </div>
+            <!-- Destinație 11 -->
+        <div class="destination-card">
+    <img src="https://as1.ftcdn.net/v2/jpg/00/86/72/52/1000_F_86725209_4bldPmz0FVi6oLtkUNOHJh7zaWQg380y.jpg">
+    <h3>Brașov, România</h3>
+    <p>Oraș medieval în inima Carpaților, cu Castelul Bran și centrul istoric fermecător.</p>
+</div>
+
+<!-- Destinație 12 -->
+<div class="destination-card">
+    <img src="https://invest.gov.md/wp-content/uploads/2025/06/Catedrala-si-Clopotnita-1-e1638435096460.jpg" alt="Chișinău, Moldova">
+    <h3>Chișinău, Moldova</h3>
+    <p>Capitala Moldovei, cu parcuri verzi, clădiri istorice și viață culturală activă.</p>
+</div>
+        </div>
+    </section>
+</main>
+
+<aside>
+    <h2>Vrei altă țară?</h2>
+    <p>Spune-ne ce îți place și îți pregătim ofertă personalizată gratuit!</p>
+</aside>
+
+<footer>
+    <p>© 2026 Brosoveanu Turism. Toate drepturile rezervate.</p>
+    <p>Telefon: +373 689 455 11 | Email: info@brosoveanuturism.md</p>
+    <p>Str. Ștefan cel Mare 45, Chișinău</p>
+</footer>
+
+</body>
+</html>

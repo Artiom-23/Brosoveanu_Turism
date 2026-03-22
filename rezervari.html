@@ -1,0 +1,77 @@
+rezervari.html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervări | Brosoveanu Turism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><h1>BROSOVEANU TURISM</h1></a>
+        <p>Vacante frumoase la prețuri corecte!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="destinatii.html">Destinații</a></li>
+            <li><a href="oferte.html">Oferte speciale</a></li>
+            <li><a href="rezervari.html">Rezervări</a></li>
+            <li><a href="blog.html">Blog turistic</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Rezervă acum vacanța visurilor tale</h2>
+            <form action="#" method="post">
+                <label>Nume și prenume:</label><br>
+                <input type="text" name="nume" required><br>
+
+                <label>Telefon:</label><br>
+                <input type="tel" name="telefon" required><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br>
+
+                <label>Destinație preferată:</label><br>
+                <select name="destinatie">
+                    <option>Antalya</option>
+                    <option>Creta</option>
+                    <option>Hurghada</option>
+                    <option>Sunny Beach</option>
+                    <option>Alta destinație</option>
+                </select><br>
+
+                <label>Data aproximativă:</label><br>
+                <input type="month" name="luna"><br>
+
+                <label>Număr persoane:</label><br>
+                <input type="number" name="persoane" min="1" value="2"><br>
+
+                <label>Comentarii / preferințe:</label><br>
+                <textarea name="comentarii" rows="5"></textarea><br>
+
+                <button type="submit">Trimite cererea de rezervare</button>
+            </form>
+            <p style="text-align:center; margin-top:20px;"><small>Te sunăm în maxim 24 de ore pentru confirmare și detalii.</small></p>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Modalități de plată</h2>
+        <p>Acceptăm card, transfer bancar și rate fără dobândă la unele pachete.</p>
+    </aside>
+
+    <footer>
+        <p>© 2026 Brosoveanu Turism. Toate drepturile rezervate.</p>
+        <p>Telefon: +373 689 455 11 | Email: info@brosoveanuturism.md</p>
+        <p>Str. Ștefan cel Mare 45, Chișinău</p>
+    </footer>
+
+</body>
+</html>
